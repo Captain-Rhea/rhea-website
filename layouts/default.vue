@@ -1,5 +1,8 @@
 <template>
   <div>
-    <slot />
+    <LayoutsNavbar />
+    <main>
+      <slot />
+    </main>
   </div>
 </template>

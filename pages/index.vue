@@ -1,3 +1,8 @@
 <template>
-  <div>Test Page</div>
+  <div>
+    <SectionsHero />
+    <SectionsSolutions />
+    <SectionsAboutUs />
+    <SectionsContact />
+  </div>
 </template>

@@ -66,7 +66,12 @@ export default defineNuxtConfig({
       apiBase: 'http://localhost:3001',
     },
   },
-  modules: ['nuxt-lucide-icons', '@hypernym/nuxt-anime', '@pinia/nuxt'],
+  modules: [
+    'nuxt-lucide-icons',
+    '@hypernym/nuxt-anime',
+    '@pinia/nuxt',
+    '@nuxt/image-edge',
+  ],
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
   css: ['~/assets/css/tailwind.css'],

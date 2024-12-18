@@ -31,7 +31,8 @@ const menuList = [
         <div
           class="col-span-2 flex items-center justify-end gap-4 w-full h-full"
         >
-          <BaseCtaButton>สนใจปรึกษา</BaseCtaButton>
+          <BaseLangSwitcher />
+          <BaseCtaButton>ปรึกษาฟรี</BaseCtaButton>
         </div>
       </div>
     </div>

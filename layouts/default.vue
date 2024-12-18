@@ -5,5 +5,7 @@
       <slot />
     </main>
     <LayoutsFooter />
+
+    <BaseGoToTopButton />
   </div>
 </template>

@@ -71,7 +71,18 @@ export default defineNuxtConfig({
     '@hypernym/nuxt-anime',
     '@pinia/nuxt',
     '@nuxt/image-edge',
+    '@nuxtjs/i18n',
   ],
+  i18n: {
+    locales: [
+      { code: 'th', name: 'ภาษาไทย', language: 'th-TH', file: 'th.json' },
+      { code: 'en', name: 'English', language: 'en-US', file: 'en.json' },
+    ],
+    strategy: 'prefix_and_default',
+    defaultLocale: 'th',
+    lazy: true,
+    vueI18n: './i18n.config.ts',
+  },
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
   css: ['~/assets/css/tailwind.css'],

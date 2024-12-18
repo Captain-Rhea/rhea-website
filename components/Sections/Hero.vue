@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { t } = useI18n();
+</script>
 
 <template>
   <div id="sectionHero">
@@ -11,20 +13,28 @@
       <div
         class="absolute inset-0 flex items-center justify-center text-white text-center"
       >
-        <div class="max-w-lg">
+        <div>
+          <p>{{ t('welcome') }}</p>
+
           <div class="bg-white/10 py-1 px-2 rounded w-fit mx-auto">
-            Caption: Lorem ipsum dolor sit amet consectetur
+            ประสบการณ์ที่ดีของผู้ใช้ คือหัวใจของซอฟต์แวร์ที่เราพัฒนา
           </div>
-          <div class="text-6xl">We Convert Concepts</div>
-          <div class="text-6xl">Into Technology</div>
-          <p class="mt-4">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
-            pariatur, ad aliquid iusto facilis illo provident tempore fuga
-            tempora, ipsam, cum nostrum animi eaque nesciunt fugit dolores odit
-            eveniet quod!
+          <div class="text-6xl">Delivering Software That Inspires</div>
+          <div class="text-6xl">and Impresses Every User</div>
+          <p class="mt-4 max-w-lg mx-auto">
+            เราพัฒนาซอฟต์แวร์ที่ไม่เพียงแค่ทำงานได้ดี
+            แต่ยังสร้างประสบการณ์การใช้งานที่น่าประทับใจ
+            ช่วยให้ธุรกิจของคุณเข้าถึงลูกค้าได้อย่างมีประสิทธิภาพ
+            ตอบโจทย์ทุกความต้องการ
+            และสร้างความสัมพันธ์ที่ยั่งยืนผ่านเทคโนโลยีที่ใช้ง่ายและล้ำสมัย
           </p>
-          <div class="mt-8">
-            <BaseCtaButton>สนใจปรึกษา</BaseCtaButton>
+          <div class="mt-8 flex items-center w-fit gap-6 mx-auto">
+            <BaseCtaButton>ปรึกษาฟรี</BaseCtaButton>
+            <div
+              class="border rounded-md py-2 px-4 text-lg bg-white/10 cursor-pointer transition-all duration-200 hover:bg-white hover:text-blue-800"
+            >
+              โซลูชั่นของเรา
+            </div>
           </div>
         </div>
       </div>
